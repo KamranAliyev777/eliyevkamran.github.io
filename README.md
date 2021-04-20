@@ -1,2 +1,2 @@
 
-[I'm an inline-style link](eliyevkamran.github.io)
+[eliyevkamran.github.io](eliyevkamran.github.io)
