@@ -1,0 +1,79 @@
+h1{
+    text-align: center;
+    color: green;
+}
+.main{
+    text-align: center;
+}
+.main h3{
+    color: rgb(255, 0, 119);
+    font-size: 25px;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+}
+.ques{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.id{
+    display: inline-block;
+    width: 50px;
+}
+.answer{
+    display: flex;
+}
+.ans{
+    border: 1px solid red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#finish,.start,#again{
+    background-color: seagreen;
+    width: fit-content;
+    text-align: center;
+    padding: 7px 30px;
+    margin: 10px auto;
+    margin-bottom: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+#again{
+    background-color: red;
+    pointer-events: painted;
+}
+.green{
+    background-color:green;
+}
+.red{
+    background-color:red;
+}
+.result p{
+    font-size: 20px;
+}
+.result span{
+    margin-left: 15px;
+    font-size: 20px;
+}
+.correct{
+    color: green;
+}
+.incorrect{
+    color: red;
+}
+.pointer_event{
+    pointer-events: none;
+    background-color: rgb(245 245 245);
+}
+.dis_none{
+    display: none;
+}
