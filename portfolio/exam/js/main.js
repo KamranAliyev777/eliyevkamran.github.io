@@ -328,7 +328,8 @@ correct.push(all[i][0]);
 let exam=[];
 let quiz_inner="";
 for(let i=0;i<50;i++){
-let quiz_num=parseInt(Math.random()*(last-first))+(+first);
+    let araliq=(+last)-(+first)+1;
+let quiz_num=parseInt(Math.random()*araliq)+(+first);
 if(exam.indexOf(quiz_num)==-1){
 exam.push(quiz_num)
 }
@@ -340,7 +341,7 @@ exam=exam.sort((a,b)=>a-b);
 for(let k=0;k<exam.length;k++){
 quiz_inner+="<div class='ques'>";
 quiz_inner+="<h3 class='id'>"+exam[k]+"</h3>";
-quiz_inner+="<div class='answer'></div><div id='A' class='ans'>A</div><div id='B' class='ans'>B</div><div id='C' class='ans'>C</div><div id='D' class='ans'>D</div><div id='E' class='ans'>E</div><span class='congrts dis_none'>✅</span></div>"
+quiz_inner+="<div class='answer'></div><div id='A' class='ans'>A</div><div id='B' class='ans'>B</div><div id='C' class='ans'>C</div><div id='D' class='ans'>D</div><div id='E' class='ans'>E</div><span class=' smile congrts dis_none'>✅</span><span class=' smile loser dis_none'>❌</span></div>"
 quiz_inner+="</div>";
 }
 $(".questions").text("").append(quiz_inner);
@@ -366,13 +367,19 @@ if(sorus){
             $(".ques").eq(i).find(".congrts").removeClass("dis_none")
         }
         else{
-            $(".ques").eq(i).find("#"+correct[task_id-1]).addClass("red")
+            $(".ques").eq(i).find("#"+correct[task_id-1]).addClass("red");
+            $(".ques").eq(i).find(".loser").removeClass("dis_none")
         }
     }
 $(".correct").text(mycorrect.length);
 $(".incorrect").text(50-mycorrect.length);
 $(".result").css("display","")
 $(".questions").addClass("pointer_event")
+$(".best").slideDown();
+
+setTimeout(function () {
+    $(".best").slideUp()
+}, 5000);
 }
 })
 

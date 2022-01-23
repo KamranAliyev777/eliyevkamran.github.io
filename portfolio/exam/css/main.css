@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 h1{
     text-align: center;
     color: green;
@@ -21,6 +24,9 @@ h1{
 .id{
     display: inline-block;
     width: 50px;
+}
+.exam{
+    position: relative;
 }
 .answer{
     display: flex;
@@ -76,4 +82,21 @@ h1{
 }
 .dis_none{
     display: none;
+}
+.best{
+    text-align: center;
+    background-color: #f3e3e3;
+    height: 40vw;
+    top: 50px;
+    width: 100%;
+    position: fixed;
+    padding-top: 100px;
+}
+.best p{
+    font-size: 25px;
+    color:green;
+}
+.best p span{
+    color: red;
+    margin-left: 5px;
 }
