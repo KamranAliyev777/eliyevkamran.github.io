@@ -358,7 +358,7 @@ $(document).ready(function () {
         if(sorus){
             for(let i=0;i<50;i++){
                 let task_id=exam[i];
-                if(my_result[task_id]==correct[task_id]){
+                if(my_result[task_id]==correct[task_id-1]){
                     mycorrect.push(task_id);
                     $(".ques").eq(i).find(".congrts").removeClass("dis_none")
                 }
