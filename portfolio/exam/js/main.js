@@ -328,7 +328,7 @@ correct.push(all[i][0]);
 let exam=[];
 let quiz_inner="";
 for(let i=0;i<50;i++){
-let quiz_num=parseInt(Math.random()*last)+(+first);
+let quiz_num=parseInt(Math.random()*last-first)+(+first);
 if(exam.indexOf(quiz_num)==-1){
 exam.push(quiz_num)
 }
