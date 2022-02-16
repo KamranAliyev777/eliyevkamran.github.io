@@ -91,10 +91,10 @@
   }
 
   #about {
-    .about_list {
+    .about_inner .about_bottom .about_right .about_list {
       flex-direction: column;
-      align-items: flex-start !important;
-
+      align-items: flex-start;
+      
       .about_list_left,
       .about_list_right {
         width: 100%;
