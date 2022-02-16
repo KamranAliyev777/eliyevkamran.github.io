@@ -1,0 +1,58 @@
+header {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: $white;
+  z-index: 100;
+
+  .header_inner {
+    @include flex(row, space-between, center);
+    padding: 15px 0;
+
+    > a {
+      color: $black;
+      font-size: 24px;
+      font-weight: 600;
+      @include text-transform(uppercase);
+    }
+
+    nav ul {
+      @include flex(row, space-between, center);
+
+      li a {
+        padding: 0 15px;
+        color: $black;
+        @include text-transform(uppercase);
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+
+    .nav_btn {
+      width: 40px;
+      height: 40px;
+      background-color: $orange;
+      border: none;
+      @include flex(column, center, center);
+      display: none;
+      cursor: pointer;
+
+      &:focus {
+        border: 1px solid $black;
+        border-radius: 5px;
+      }
+
+      span {
+        width: 25px;
+        height: 2px;
+        background-color: $white;
+        margin: 3px 0;
+      }
+    }
+  }
+}
