@@ -1,4 +1,4 @@
-@media (max-width: 991px) {
+@media (max-width: $lg) {
   #header {
     nav {
       position: absolute;
@@ -32,7 +32,7 @@
   }
 
   #home {
-    .home_left {
+    .home_inner .home_left {
       h1 {
         font-size: 40px;
       }
@@ -50,11 +50,6 @@
       .about_bottom {
         flex-direction: column;
 
-        .about_left,
-        .about_right {
-          width: 100%;
-        }
-
         .about_right {
           padding: 0;
         }
@@ -63,17 +58,13 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $md) {
   #home {
     height: 100%;
 
     .home_inner {
       flex-direction: column;
 
-      .home_left,
-      .home_right {
-        width: 100%;
-      }
       .home_left {
         padding: 30px;
 
@@ -94,10 +85,15 @@
     .about_inner .about_bottom .about_right .about_list {
       flex-direction: column;
       align-items: flex-start;
-      
-      .about_list_left,
-      .about_list_right {
-        width: 100%;
+    }
+  }
+
+  #footer{
+    .footer_in{
+      flex-direction: column;
+
+      .social{
+        margin-bottom: 15px;
       }
     }
   }

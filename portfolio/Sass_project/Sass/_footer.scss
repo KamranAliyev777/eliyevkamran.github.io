@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixin";
+#footer {
+  background-color: $footer_bg;
+  padding: 22px 0;
+
+  .footer_in {
+    @include flex(row,space-between,center);
+    .social {
+      @include flex(row, flex-start, center);
+
+      li {
+        a {
+          color: $link_color;
+          font-size: 14px;
+          margin-right: 17px;
+        }
+      }
+    }
+
+    p {
+      font-size: 12px;
+      color: $link_color;
+    }
+  }
+}

@@ -5,12 +5,10 @@
   position: relative;
 
   .home_inner {
-    @include flex(row, center, center);
+    align-items: center;
     height: 100%;
 
     .home_left {
-      width: 50%;
-
       h6 {
         font-size: 18px;
         color: $black;
@@ -34,7 +32,7 @@
           border-bottom: 1px solid $black;
         }
 
-        .thick{
+        .thick {
           margin-left: 4px;
         }
       }
@@ -46,7 +44,7 @@
 
         a {
           color: #fff;
-          padding: 10px 20px;
+          padding: 10px 30px;
           @include text-transform(uppercase);
           font-size: 14px;
           border: 2px solid transparent;
@@ -72,8 +70,6 @@
     }
 
     .home_right {
-      width: 50%;
-
       img {
         vertical-align: middle;
       }
@@ -134,37 +130,10 @@
   background-color: $gray;
 
   .about_inner {
-    .section_title {
-      margin-bottom: 35px;
-
-      h3 {
-        font-size: 35px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        color: $black;
-        position: relative;
-
-        &:after {
-          content: "";
-          position: absolute;
-          height: 3px;
-          width: 50px;
-          display: block;
-          background-color: $orange;
-        }
-      }
-
-      p {
-        font-size: 14px;
-        letter-spacing: 2px;
-      }
-    }
-
     .about_bottom {
-      @include flex(row, center, center);
-
+      align-items: center;
+      justify-content: flex-start;
       .about_left {
-        width: 42%;
         border: 14px solid $white;
         border-radius: 5px;
         position: relative;
@@ -202,7 +171,6 @@
       }
 
       .about_right {
-        width: 58%;
         padding-left: 60px;
 
         h4 {
@@ -228,12 +196,8 @@
         }
 
         .about_list {
-          @include flex(row, space-between, center);
-
           .about_list_left,
           .about_list_right {
-            width: 50%;
-
             .list {
               @include flex(row, flex-start, flex-start);
 
@@ -270,6 +234,199 @@
             &:hover {
               background-color: $black;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+// SKILLS
+#skills {
+  .skill_bottom {
+    @include flex(row, space-between, center);
+    .progress {
+      @include flex(column, center, center);
+      margin-bottom: 20px;
+
+      .progress_in {
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+        .progress_info {
+          @include flex(row, space-between, center);
+          h6 {
+            color: $black;
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: inline-block;
+          }
+        }
+        .progress_bar {
+          height: 5px;
+          background-color: $gray;
+          position: relative;
+
+          .persent_bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 92%;
+            height: 100%;
+            background-color: $orange;
+
+            .percent_info {
+              position: relative;
+
+              span {
+                position: absolute;
+                left: 92%;
+                right: 0;
+                top: -30px;
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .skill_lists {
+      display: flex;
+      flex-wrap: wrap;
+
+      .skill_list {
+        padding: 15px;
+
+        .skill_list_in {
+          border: 2px solid $orange;
+          border-radius: 5px;
+          @include flex(row, flex-start, center);
+          padding: 18px 15px;
+          height: 100%;
+
+          span {
+            color: $orange;
+            font-size: 30px;
+            margin-right: 20px;
+          }
+          h5 {
+            font-size: 15px;
+            color: $black;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
+}
+
+#services {
+  background-color: $gray;
+
+  .services_inner .service_blocks {
+    display: flex;
+    flex-wrap: wrap;
+
+    .service_block {
+      padding: 15px;
+
+      .service_block_in {
+        padding: 40px 30px;
+        background-color: $white;
+        border-radius: 5px;
+        span {
+          @include flex(row, center, center);
+          border: 2px dotted $orange;
+          color: $orange;
+          font-size: 32px;
+          width: 80px;
+          height: 80px;
+          margin-bottom: 30px;
+          border-radius: 50%;
+        }
+        h5 {
+          font-size: 16px;
+          color: $black;
+          margin-bottom: 10px;
+        }
+
+        &:hover {
+          margin-top: -10px;
+          background-color: $orange;
+          transition: ease all 0.35s;
+
+          span {
+            color: $white;
+            border-color: $white;
+          }
+          h5 {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+#works {
+  .works_inner .work_images > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .work_image {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+
+      img{
+        transform: scale(1);
+        transition: ease all .35s;
+      }
+
+      .img_title {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        @include flex(column, center, center);
+        background-color: $hover_gray;
+        transition: ease all 0.35s;
+        opacity: 0;
+
+        h3,
+        p {
+          position: relative;
+          transition: ease all 0.35s;
+          left: -25px;
+        }
+        h3 {
+          font-size: 25px;
+          font-weight: 600;
+          color: $white;
+          margin-bottom: 10px;
+        }
+        p {
+          color: rgba(255, 255, 255, 0.8);
+          padding: 2px 12px;
+          font-size: 14px;
+        }
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+        .img_title {
+          opacity: 100%;
+
+          h3,
+          p {
+            left: 0;
           }
         }
       }
