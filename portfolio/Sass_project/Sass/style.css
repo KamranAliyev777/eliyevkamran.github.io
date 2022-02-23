@@ -930,8 +930,8 @@ header .header_inner .nav_btn span {
 #works .works_inner .work_images > div .work_image img {
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: ease all .35s;
-  transition: ease all .35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
 }
 
 #works .works_inner .work_images > div .work_image .img_title {
@@ -993,6 +993,175 @@ header .header_inner .nav_btn span {
 #works .works_inner .work_images > div .work_image:hover .img_title h3,
 #works .works_inner .work_images > div .work_image:hover .img_title p {
   left: 0;
+}
+
+#blogs .blog_card .blog_img a {
+  color: #d9832e;
+}
+
+#blogs .blog_card .blog_img a img {
+  height: auto;
+}
+
+#blogs .blog_card .blog_info {
+  background-color: #fff;
+  position: relative;
+  top: -30px;
+  margin: 0 10px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 8px 0px black;
+          box-shadow: 0px 0px 8px 0px black;
+}
+
+#blogs .blog_card .blog_info .date {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background-color: #d9832e;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 20px;
+}
+
+#blogs .blog_card .blog_info .meta {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 0 12px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+#blogs .blog_card .blog_info h5 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+#blogs .blog_card .blog_info h5 a {
+  color: #090a0c;
+}
+
+#blogs .blog_card .blog_info p {
+  margin-bottom: 16px;
+}
+
+#blogs .blog_card .blog_info > a {
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 2px solid #d9832e;
+  text-transform: uppercase;
+  color: #d9832e;
+}
+
+#blogs .blog_card .blog_info > a:hover {
+  color: #090a0c;
+  border-color: #090a0c;
+}
+
+#contacts {
+  background-color: #eaedf2;
+}
+
+#contacts .contacts_inner .contact_form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+#contacts .contacts_inner .contact_form h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #090a0c;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#contacts .contacts_inner .contact_form #contact_form .form_group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#contacts .contacts_inner .contact_form #contact_form .form_group input,
+#contacts .contacts_inner .contact_form #contact_form .form_group textarea {
+  display: block;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  font-size: 14px;
+  padding: 10px 0;
+  color: #495057;
+  border-bottom: 1px solid #ccc;
+}
+
+#contacts .contacts_inner .contact_form #contact_form .form_group input:focus + span,
+#contacts .contacts_inner .contact_form #contact_form .form_group textarea:focus + span {
+  width: 100%;
+  background-color: #d9832e;
+  left: 0;
+  right: auto;
+}
+
+#contacts .contacts_inner .contact_form #contact_form .form_group span {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -1px;
+  left: auto;
+  right: 0;
+  -webkit-transition: ease 0.55s;
+  transition: ease 0.55s;
+}
+
+#contacts .contacts_inner .contact_form #contact_form .form_btn {
+  background-color: #d9832e;
+  color: #fff;
+  border: 0;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-transition: ease-in 0.55s;
+  transition: ease-in 0.55s;
+  cursor: pointer;
+}
+
+#contacts .contacts_inner .contact_form #contact_form .form_btn:hover {
+  background-color: #090a0c;
+}
+
+#contacts .contacts_inner .contact_info {
+  background-color: #fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contacts .contacts_inner .contact_info:not(:first-child) {
+  margin-top: 20px;
+}
+
+#contacts .contacts_inner .contact_info > span {
+  display: inline-block;
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #d9832e;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 19px;
+  margin-right: 20px;
+}
+
+#contacts .contacts_inner .contact_info .contatct_info_body h5 {
+  font-size: 14px;
+  color: #090a0c;
+  margin-bottom: 8px;
+}
+
+#contacts .contacts_inner .contact_info .contatct_info_body p {
+  font-size: 14px;
 }
 
 #footer {

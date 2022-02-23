@@ -72,4 +72,21 @@ $(window).on('scroll load',function(){
         }
        }
 })
+
+
+
+
+
+
+
+
+
+// // TESTIMANOLAS
+// $(window).scroll(function(){
+// let testimon=$(".carousel_testimanolas");
+// let item=testimon.find(".carousel_item");
+// let width=item.length*item.width();
+// console.log(item.width())
+// testimon.width(width+"px")
+// })
         

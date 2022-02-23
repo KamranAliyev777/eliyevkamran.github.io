@@ -381,9 +381,9 @@
       height: 100%;
       overflow: hidden;
 
-      img{
+      img {
         transform: scale(1);
-        transition: ease all .35s;
+        transition: ease all 0.35s;
       }
 
       .img_title {
@@ -433,3 +433,229 @@
     }
   }
 }
+
+#blogs {
+  .blog_card {
+    .blog_img {
+      a {
+        color: $orange;
+
+        img {
+          height: auto;
+        }
+      }
+    }
+
+    .blog_info {
+      background-color: $white;
+      position: relative;
+      top: -30px;
+      margin: 0 10px;
+      padding: 20px;
+      box-shadow: $box_shadow2;
+
+      .date {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        background-color: $orange;
+        color: $white;
+        font-size: 12px;
+        padding: 5px 20px;
+      }
+
+      .meta {
+        border: 1px solid $border-nav;
+        background-color: $white;
+        padding: 0 12px;
+        display: inline-block;
+        border-radius: 3px;
+        margin-bottom: 8px;
+      }
+
+      h5 {
+        font-size: 17px;
+        margin-bottom: 5px;
+
+        a {
+          color: $black;
+        }
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      > a {
+        font-size: 14px;
+        font-weight: 600;
+        border-bottom: 2px solid $orange;
+        text-transform: uppercase;
+        color: $orange;
+
+        &:hover {
+          color: $black;
+          border-color: $black;
+        }
+      }
+    }
+  }
+}
+
+#contacts {
+  background-color: $gray;
+  .contacts_inner {
+    .contact_form {
+      background-color: $white;
+      border-radius: 5px;
+      padding: 30px;
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      #contact_form {
+        .form_group {
+          position: relative;
+          margin-bottom: 20px;
+
+          input,
+          textarea {
+            display: block;
+            width: 100%;
+            outline: 0;
+            border: 0;
+            font-size: 14px;
+            padding: 10px 0;
+            color: $form_color;
+            border-bottom: 1px solid $border-gray2;
+
+            &:focus + span {
+              width: 100%;
+              background-color: $orange;
+              left: 0;
+              right: auto;
+            }
+          }
+
+          span {
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -1px;
+            left: auto;
+            right: 0;
+            transition: ease 0.55s;
+          }
+        }
+        .form_btn {
+          background-color: $orange;
+          color: $white;
+          border: 0;
+          padding: 12px 20px;
+          font-size: 14px;
+          text-transform: uppercase;
+          transition: ease-in 0.55s;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $black;
+          }
+        }
+      }
+    }
+
+    .contact_info {
+      background-color: $white;
+      padding: 20px;
+      display: flex;
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+
+      > span {
+        display: inline-block;
+        min-width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: $orange;
+        text-align: center;
+        border-radius: 50%;
+        color: $white;
+        font-size: 19px;
+        margin-right: 20px;
+      }
+      .contatct_info_body {
+        h5 {
+          font-size: 14px;
+          color: $black;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+// #testimanolas {
+//   background-color: $gray;
+
+//   .testimanolas_inner {
+//     position: relative;
+//     padding-bottom: 30px;
+//     overflow-x: scroll;
+
+//     .carousel_testimanolas,.row {
+//       flex-wrap: unset;
+
+//       .testimon_block {
+//         background-color: $white;
+//         padding: 20px;
+//         margin-bottom: 15px;
+//         border: 1px solid $border_nav;
+
+//         .testimon_img {
+//           width: 120px;
+//           height: 120px;
+//           overflow: hidden;
+//           border-radius: 50% 0 50% 50%;
+//         }
+
+//         .testimon_body {
+//           p {
+//             margin-bottom: 15px;
+//           }
+//           h4 {
+//             font-weight: 600;
+//             color: $black;
+//             font-size: 18px;
+//             margin-bottom: 5px;
+//           }
+//         }
+//       }
+//     }
+//     .owl_dots {
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       right: 0;
+//       text-align: center;
+//       .owl_dot {
+//         display: inline-block;
+//         width: 15px;
+//         height: 15px;
+//         border: 1px solid $orange;
+//         border-radius: 50%;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
