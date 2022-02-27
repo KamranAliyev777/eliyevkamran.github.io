@@ -1,0 +1,129 @@
+#header {
+  .header_inner {
+    padding: 16px 0;
+    @include flex(row, space-between, center);
+
+    .header_top {
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        height: 100%;
+
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+    .header_middle {
+      @include flex(row, space-between, center);
+      width: 50%;
+      
+      .search_block {
+        background-color: $primary-dark-4;
+        padding: 12px 16px;
+        border-radius: 8px;
+        width: 100%;
+        margin-right: 32px;
+
+        span {
+          color: $primary-dark-2;
+          margin-right: 22px;
+        }
+        input {
+          border: 0;
+          background-color: transparent;
+          color: $primary-dark-3;
+        }
+      }
+
+      .language_block {
+        @include flex(row, center, center);
+
+        .globe {
+          font-size: 20px;
+          margin-right: 8px;
+        }
+        .langs {
+          position: relative;
+
+          .langs_list {
+            font-family: $font-Euclid-Circular-A;
+            font-size: 14px;
+            font-weight: 400;
+            appearance: none;
+            outline: none;
+            border: 0;
+            text-transform: uppercase;
+            padding-right: 5px;
+          }
+          .arrow {
+            font-size: 13px;
+            position: absolute;
+            right: 0;
+            top: 1px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .header_list {
+      @include flex(row, center, center);
+
+      > span {
+        font-size: 18px;
+
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
+      }
+
+      .bag_block {
+        @include flex(row,center,center);
+
+        .bag {
+          margin-right: 12px;
+          vertical-align: middle;
+        }
+        .bag_add_count {
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          background-color: $primary-pink;
+          color: $white;
+          font-family: $font-Euclid-Circular-A;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16px;
+          @include flex(row, center, center);
+        }
+      }
+    }
+  }
+
+  .nav {
+    background-color: $primary-dark;
+    padding: 12px 0;
+    overflow: hidden;
+
+    ul {
+      @include flex(row, flex-start, center);
+
+      li {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+        a {
+          color: $white;
+          font-family: $font-Euclid-Circular-A;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
