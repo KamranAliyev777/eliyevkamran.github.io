@@ -1,11 +1,20 @@
 #header {
+
+  @include mobile{
+    background-color: $primary-dark;
+    color: $white;
+  }
+  
   .header_inner {
     padding: 16px 0;
     @include flex(row, space-between, center);
+    position: relative;
 
-    .header_top {
-      justify-content: space-between;
-      align-items: center;
+    .header-left {
+
+      @include mobile{
+        display: none;
+      }
 
       .logo {
         height: 100%;
@@ -15,11 +24,38 @@
         }
       }
     }
-    .header_middle {
+
+    .header-left-mobile{
+      display: none;
+
+      display: flex;
+      .mobile-icon{
+        @include flex(column, center, center);
+        margin-right: 12px;
+        cursor: pointer;
+
+        .line{
+          display: inline-block;
+          height: 2px;
+          width: 20px;
+          margin-bottom: 5px;
+          background-color: $white;
+        }
+      }
+      .mobile-logo{
+        height: 100%
+      }
+    }
+
+    .header-middle {
       @include flex(row, space-between, center);
       width: 50%;
+
+      @include mobile{
+        display: none;
+      }
       
-      .search_block {
+      .search-block {
         background-color: $primary-dark-4;
         padding: 12px 16px;
         border-radius: 8px;
@@ -105,16 +141,25 @@
 
   .nav {
     background-color: $primary-dark;
-    padding: 12px 0;
     overflow: hidden;
+    transition: .8s;
+
+    @include mobile {
+      position: absolute;
+      left: -70%;
+      width: 70%;
+      z-index: 10;
+    }
 
     ul {
-      @include flex(row, flex-start, center);
+      @include flex(row, space-between, center);
+
+      @include mobile{
+        flex-direction: column;
+      }
 
       li {
-        &:not(:last-child) {
-          margin-right: 40px;
-        }
+        padding: 17px 15px;
         a {
           color: $white;
           font-family: $font-Euclid-Circular-A;
@@ -124,6 +169,36 @@
           text-transform: uppercase;
         }
       }
+      
     }
+    .search-area{
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+      display: none;
+
+      @include mobile{
+        display: block;
+      }
+      
+    .search-block {
+      background-color: $primary-dark-4;
+      padding: 12px 16px;
+      border-radius: 8px;
+      width: 100%;
+      margin-right: 32px;
+      width: 100%;
+
+      span {
+        color: $primary-dark-2;
+        margin-right: 22px;
+      }
+      input {
+        border: 0;
+        background-color: transparent;
+        color: $primary-dark-3;
+      }
+    }
+  }
   }
 }

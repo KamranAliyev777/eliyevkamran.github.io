@@ -6,3 +6,17 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+//TABLET
+@mixin tablet {
+    @media (max-width:$md) {
+        @content;
+    }
+}
+
+//MOBILE
+@mixin mobile {
+    @media (max-width:$sm) {
+        @content;
+    }
+}

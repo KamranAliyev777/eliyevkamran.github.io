@@ -34,3 +34,30 @@ $(left_arrow).click(function(){
     carousel.css("transform","translateX("+scroll+"px)");
     console.log(scroll+"-->"+maxScroll)
 })
+
+// NAVIGATION
+
+let nav_btn=$(".mobile-icon");
+
+nav_btn.click(function(){
+    $(".nav").toggleClass("left-0")
+})
+
+// LOGIN-REGISTER
+let login=$(".login-body");
+let reg=$(".reg-body");
+let login_btn=$(".login-btn");
+let reg_btn=$(".reg-btn");
+
+login_btn.click(function(){
+    login.css("display","flex");
+    reg.css("display","none");
+    $(this).addClass("active-btn");
+    $(".reg-btn").removeClass("active-btn");
+})
+reg_btn.click(function(){
+    login.css("display","none");
+    reg.css("display","block");
+    $(this).addClass("active-btn");
+    $(".login-btn").removeClass("active-btn");
+})

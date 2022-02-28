@@ -64,6 +64,13 @@ h6 {
   font-size: 12px;
   line-height: 16px;
 }
+.active-btn{
+  color: $primary-pink!important;
+  border-bottom-color: $primary-pink!important;
+}
+.left-0{
+  left: 0!important;
+}
 
 section {
   padding: 48px 0;

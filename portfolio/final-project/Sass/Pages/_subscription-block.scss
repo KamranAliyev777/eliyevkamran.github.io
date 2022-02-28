@@ -21,6 +21,10 @@
           border: 0;
           outline: 0;
           border-radius:8px;
+
+          @include mobile{
+            width: 50%;
+          }
         }
 
         .subsr-btn {
