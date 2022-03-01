@@ -1,4 +1,4 @@
-.login {
+#login {
   background-color: $gray-6;
   padding: 90px 0;
 
@@ -9,7 +9,7 @@
     @include mobile{
         width: 100%;
     }
-    
+
   }
   .login-tabs {
     display: flex;
@@ -17,7 +17,7 @@
   .login-btn,
   .reg-btn {
     padding-bottom: 24px;
-    border-bottom: 2px solid $primary-gray-6;
+    border-bottom: 2px solid $gray-5;
     width: 50%;
     text-align: center;
     color: $primary-dark;
@@ -57,7 +57,7 @@
   }
 
   .or {
-    color: $primary-gray-3;
+    color: $gray-3;
     margin: 16px 0;
   }
   #login-form {
