@@ -7,7 +7,7 @@
 
   .comments-block {
 
-    @include mobile{
+    @include tablet{
       order:2;
       margin-top: 40px;
     }
@@ -63,7 +63,7 @@
           padding: 16px 0;
           border-radius: 8px;
 
-          @include mobile{
+          @include tablet{
             width: 100%;
           }
         }

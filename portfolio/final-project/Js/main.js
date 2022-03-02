@@ -61,3 +61,16 @@ reg_btn.click(function(){
     $(this).addClass("active-btn");
     $(".login-btn").removeClass("active-btn");
 })
+
+
+// MORE TEXT
+let more_btn=$(".more-text-btn");
+more_btn.click(function(){
+    $(".more-text").toggleClass("inline");
+    $(".more-dots").toggleClass("dis-none");
+
+    if ($(this).text() == "daha çox")
+    $(this).text("daha az")
+ else
+    $(this).text("daha çox");
+})

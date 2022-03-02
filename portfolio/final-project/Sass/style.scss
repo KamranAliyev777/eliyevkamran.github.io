@@ -1,10 +1,17 @@
-@import "variables";
-@import "mixin";
-@import "reset";
-@import "bootstrap";
-@import "common";
-@import "header";
-@import "footer";
+// ! SASS Utils
+@import "utils/variables";
+@import "utils/mixin";
+
+// ! Components
+@import "components/reset";
+@import "components/bootstrap";
+@import "components/common";
+
+// ! Layouts
+@import "layouts/header";
+@import "layouts/footer";
+
+// ! Pages
 @import "pages/product-detail";
 @import "pages/product-similar";
 @import "pages/product-review";

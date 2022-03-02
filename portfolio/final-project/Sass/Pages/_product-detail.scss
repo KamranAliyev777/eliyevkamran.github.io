@@ -6,7 +6,7 @@
 
   #breadcrumbs {
     
-    @include mobile{
+    @include device{
       display: none;
     }
 
@@ -40,7 +40,7 @@
     position: relative;
     margin-right: 32px;
 
-    @include mobile {
+    @include device {
       margin: 0;
     }
   }
@@ -50,7 +50,7 @@
     overflow-y: scroll;
     position: relative;
 
-    @include mobile {
+    @include device {
       display: flex;
       flex-wrap: nowrap;
       overflow: hidden;
@@ -65,17 +65,23 @@
     padding: 16px 12px;
     border-radius: 3px;
     cursor: pointer;
+    text-align: center;
 
     &:not(:last-child) {
       margin-bottom: 10px;
 
-      @include mobile {
+      @include device {
         margin: 0;
       }
     }
     &:focus {
       border: 1px solid $dark-2;
     }
+
+    img{
+      width: 70%;
+    }
+
     .product-heart {
       width: 40px;
       height: 40px;
@@ -89,7 +95,7 @@
       border-radius: 50%;
       display: none;
 
-      @include mobile {
+      @include device {
         display: flex;
       }
     }
@@ -104,7 +110,7 @@
     text-align: center;
     padding: 5px 10px;
 
-    @include mobile {
+    @include device {
       display: none;
     }
   }
@@ -116,7 +122,7 @@
     cursor: pointer;
     display: none;
 
-    @include mobile {
+    @include device {
       display: block;
     }
   }
@@ -135,7 +141,7 @@
     text-align: center;
     display: none;
 
-    @include mobile {
+    @include device {
       display: block;
     }
     .dot {
@@ -158,13 +164,13 @@
     border-radius: 4px;
     @include flex(row, center, center);
 
-    @include mobile{
+    @include device{
       display: none;
     }
   }
 
   .img-block {
-    width: 70%;
+    width: 80%;
     height: auto;
   }
 
@@ -174,7 +180,7 @@
       line-height: 28px;
       margin-bottom: 16px;
 
-      @include mobile {
+      @include device {
         font-size: 14px;
         line-height: 20px;
         width: 80%;
@@ -225,7 +231,7 @@
     border-bottom: 1px solid $gray-6;
     margin-bottom: 20px;
 
-    @include mobile{
+    @include device{
       flex-wrap: wrap;
     }
   }
@@ -260,7 +266,7 @@
     @include flex(row, flex-start, center);
     margin-bottom: 32px;
 
-    @include mobile{
+    @include device{
       display: none
     }
 
@@ -299,7 +305,7 @@
       background-color: $white;
       color: $primary-pink;
 
-      @include mobile{
+      @include device{
         display: none;
       }
     }
@@ -312,6 +318,15 @@
     }
     p {
       line-height: 24px;
+    }
+    .more-text-btn{
+      color:$blue-2;
+      cursor:pointer;
+      display: none;
+      
+      @include tablet{
+        display: inline-block;
+      }
     }
   }
 }
