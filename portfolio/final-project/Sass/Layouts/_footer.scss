@@ -47,12 +47,8 @@
         }
         .social {
           @include flex(row, flex-start, center);
-
-          @include tablet {
-            justify-content: center;
-          }
-
           margin-bottom: 30px;
+          
           li {
             &:not(:last-child) {
               margin-right: 32px;
@@ -89,6 +85,11 @@
 
     .footer-bottom-nav {
       @include flex(row, space-between, center);
+
+      @include tablet{
+        width: 100%;
+      }
+
       li {
         &:first-child {
           margin-right: 48px;

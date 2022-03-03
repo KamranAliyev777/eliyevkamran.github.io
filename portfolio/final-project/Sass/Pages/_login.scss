@@ -14,6 +14,7 @@
   .login-tabs {
     display: flex;
   }
+
   .login-btn,
   .reg-btn {
     padding-bottom: 24px;
@@ -42,6 +43,7 @@
     color: $white;
     @include flex(row, center, center);
     border-radius: 8px;
+    cursor: pointer;
 
     &:first-child {
       background-color: #3b5797;
@@ -51,8 +53,9 @@
       background-color: #dd4d39;
     }
 
-    img {
-      margin-right: 22px;
+    i {
+      margin-right: 20px;
+      font-size: 20px;
     }
   }
 
@@ -60,6 +63,7 @@
     color: $gray-3;
     margin: 16px 0;
   }
+  
   #login-form {
       width: 100%;
 

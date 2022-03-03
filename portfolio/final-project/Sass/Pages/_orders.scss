@@ -47,6 +47,7 @@
       margin-bottom: 24px;
     }
   }
+
   .order-left{
       align-items:center;
       justify-content: space-between;
@@ -81,6 +82,7 @@
            margin-bottom: 20px;
        }
     }
+
       p{
           color: $gray-3;
           margin-bottom: 8px;
@@ -90,18 +92,23 @@
           line-height: 16px;
       }
   }
+
   .order-date span{
       color: $gray-1;
   }
+  
   .order-price span{
       color: $primary-pink;
   }
+
   .way-status,.ready-status{
       font-weight: 600;
   }
+
   .success-status{
       color:$green;
   }
+
   .fail-status{
       color:$red;
 
@@ -111,6 +118,7 @@
         font-size: 13px;
     }
   }
+  
   .order-btn{
       width: 100%;
       padding: 11px 0;

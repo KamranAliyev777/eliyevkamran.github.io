@@ -1,86 +1,89 @@
-#product-similar,#product-advised,#product-liked {
+#product-similar,
+#product-advised,
+#product-liked {
   .product-similar-inner {
     position: relative;
+  }
 
-    .similar-products-carousel-scroll {
-      overflow: scroll;
+  .similar-products-carousel-scroll {
+    overflow: scroll;
+  }
 
-      .similar-products-carousel {
-        display: flex;
-        flex-wrap: nowrap;
-        transition: all 0.9s ease 0s;
+  .similar-products-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 0.9s ease 0s;
+  }
 
-        .carousel-product {
-          background-color: $white;
-          position: relative;
-          width: 250px;
-          min-width: 250px;
+  .carousel-product {
+    background-color: $white;
+    position: relative;
+    width: 250px;
+    min-width: 250px;
 
-          &:not(:last-child) {
-            margin-right: 24px;
-          }
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
 
-          .carousel-product-image {
-            width: 100%;
-            height: 250px;
-            margin-bottom: 24px;
-          }
+  .carousel-product-image {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 24px;
+  }
 
-          .carousel-product-body {
-            padding: 0 24px;
+  .carousel-product-body {
+    padding: 0 24px;
 
-            h3 {
-              margin-bottom: 16px;
-              color: $gray-1;
-            }
-            .info-stars {
-              margin-bottom: 24px;
+    h3 {
+      margin-bottom: 16px;
+      color: $gray-1;
+    }
+    .info-stars {
+      margin-bottom: 24px;
 
-              i {
-                font-size: 12px;
-              }
-              .count-person {
-                color: $gray-7;
-                margin-left: 12px;
-              }
-            }
-            .product-price {
-              .last-price {
-                font-size: 18px;
-              }
-              .new-price {
-                font-size: 20px;
-              }
-            }
-          }
-          .product-heart {
-            width: 40px;
-            height: 40px;
-            border: 1px solid $gray-6;
-            background-color:$white;
-            font-size: 19px;
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            @include flex(row, center, center);
-            border-radius: 50%;
-          }
-        }
+      i {
+        font-size: 12px;
+      }
+      .count-person {
+        color: $gray-7;
+        margin-left: 12px;
       }
     }
+    .product-price {
+      .last-price {
+        font-size: 18px;
+      }
+      .new-price {
+        font-size: 20px;
+      }
+    }
+  }
 
-    .carousel-arrow {
-      position: absolute;
-      top: 30%;
-      font-size: 22px;
-      color: $dark-2;
-      cursor: pointer;
-    }
-    .arrow-left {
-      left: 0;
-    }
-    .arrow-right {
-      right: 0;
-    }
+  .product-heart {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $gray-6;
+    background-color: $white;
+    font-size: 19px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @include flex(row, center, center);
+    border-radius: 50%;
+  }
+
+  .carousel-arrow {
+    position: absolute;
+    top: 30%;
+    font-size: 22px;
+    color: $dark-2;
+    cursor: pointer;
+  }
+  .arrow-left {
+    left: -20px;
+  }
+  .arrow-right {
+    right: -20px;
   }
 }

@@ -5,8 +5,7 @@
   padding: 30px 0;
 
   #breadcrumbs {
-    
-    @include device{
+    @include device {
       display: none;
     }
 
@@ -53,6 +52,7 @@
     @include device {
       display: flex;
       flex-wrap: nowrap;
+      padding: 0 20px;
       overflow: hidden;
       overflow-x: scroll;
     }
@@ -66,19 +66,21 @@
     border-radius: 3px;
     cursor: pointer;
     text-align: center;
+    position: relative;
 
     &:not(:last-child) {
       margin-bottom: 10px;
 
       @include device {
         margin: 0;
+        margin-right: 30px;
       }
     }
     &:focus {
       border: 1px solid $dark-2;
     }
 
-    img{
+    img {
       width: 70%;
     }
 
@@ -109,11 +111,13 @@
     color: $primary-dark;
     text-align: center;
     padding: 5px 10px;
+    cursor: pointer;
 
     @include device {
       display: none;
     }
   }
+
   .carousel-arrow {
     position: absolute;
     top: 50%;
@@ -126,6 +130,7 @@
       display: block;
     }
   }
+
   .arrow-left {
     left: 0;
   }
@@ -164,7 +169,7 @@
     border-radius: 4px;
     @include flex(row, center, center);
 
-    @include device{
+    @include device {
       display: none;
     }
   }
@@ -172,9 +177,16 @@
   .img-block {
     width: 80%;
     height: auto;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.2);
+      cursor: zoom-in;
+    }
   }
 
   .product-information {
+    padding: 12px 0;
+
     h3 {
       font-size: 20px;
       line-height: 28px;
@@ -204,10 +216,12 @@
       font-size: 12px;
     }
   }
+
   .product-price {
     padding-bottom: 16px;
     border-bottom: 1px solid $gray-6;
   }
+
   .product-info-general {
     .product-info-color,
     .product-info-size {
@@ -220,10 +234,12 @@
       }
     }
   }
-  .product-colors{
+
+  .product-colors {
     width: 100%;
     overflow-x: scroll;
   }
+
   .product-color-list {
     display: flex;
     flex-wrap: wrap;
@@ -231,7 +247,7 @@
     border-bottom: 1px solid $gray-6;
     margin-bottom: 20px;
 
-    @include device{
+    @include device {
       flex-wrap: wrap;
     }
   }
@@ -249,6 +265,7 @@
       border: 1px solid $primary-dark;
     }
   }
+
   .new-product {
     &::after {
       content: "Yeni";
@@ -262,12 +279,13 @@
       color: $white;
     }
   }
+
   .product-counter {
     @include flex(row, flex-start, center);
     margin-bottom: 32px;
 
-    @include device{
-      display: none
+    @include device {
+      display: none;
     }
 
     .count-math {
@@ -277,12 +295,14 @@
       border-radius: 50%;
       background-color: $gray-6;
       font-size: 22px;
+      cursor: pointer;
     }
     .count {
       margin: 0 32px;
       color: $primary-dark;
     }
   }
+
   .product-btns {
     margin-bottom: 40px;
 
@@ -305,11 +325,12 @@
       background-color: $white;
       color: $primary-pink;
 
-      @include device{
+      @include device {
         display: none;
       }
     }
   }
+
   .product-about {
     color: $gray-1;
 
@@ -319,12 +340,12 @@
     p {
       line-height: 24px;
     }
-    .more-text-btn{
-      color:$blue-2;
-      cursor:pointer;
+    .more-text-btn {
+      color: $blue-2;
+      cursor: pointer;
       display: none;
-      
-      @include tablet{
+
+      @include tablet {
         display: inline-block;
       }
     }

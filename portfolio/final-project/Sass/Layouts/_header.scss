@@ -37,9 +37,26 @@
         .line{
           display: inline-block;
           height: 2px;
-          width: 20px;
+          width: 25px;
           margin-bottom: 5px;
           background-color: $white;
+          transition: ease .5s;
+        }
+      }
+
+      .mobile-clicked-icon{
+        .line{
+          margin: 0;
+
+          &:nth-child(1){
+            transform: rotate(45deg) translate(1px, -1px);
+          }
+          &:nth-child(2){
+            display: none;
+          }
+          &:nth-child(3){
+            transform: rotate(-45deg) translate(1px, -1px);
+          }
         }
       }
       .mobile-logo{
@@ -65,11 +82,13 @@
         span {
           color: $dark-2;
           margin-right: 22px;
+          cursor: pointer;
         }
         input {
           border: 0;
           background-color: transparent;
           color: $gray-7;
+          width: 80%
         }
       }
 
@@ -82,16 +101,13 @@
         }
         .langs {
           position: relative;
+          cursor: pointer;
 
-          .langs_list {
-            font-family: $font-Euclid-Circular-A;
+          .main-lang {
             font-size: 14px;
             font-weight: 400;
-            appearance: none;
-            outline: none;
-            border: 0;
             text-transform: uppercase;
-            padding-right: 5px;
+            margin-right: 20px;
           }
           .arrow {
             font-size: 13px;
@@ -100,24 +116,40 @@
             top: 1px;
             cursor: pointer;
           }
+          .dropdown{
+            position: absolute;
+            top: 120%;
+            background-color:$white;
+            padding: 10px;
+            text-transform: uppercase;
+            opacity: 0;
+            transform: .5s;
+
+            li{
+              margin-bottom: 10px
+            }
+          }
         }
       }
     }
 
-    .header_list {
+    .header-list {
       @include flex(row, center, center);
 
-      > span {
+      > a {
         font-size: 18px;
         cursor: pointer;
+        color:$primary-dark;
+        margin-left: 24px;
 
-        &:not(:last-child) {
-          margin-right: 24px;
+        @include device{
+          color:$white;
+          margin-left: 20px;
         }
       }
 
       .search-icon{
-        @include tablet{
+        @include device{
           display: block!important;
         }
       }
@@ -218,11 +250,13 @@
       span {
         color: $dark-2;
         margin-right: 22px;
+        cursor: pointer;
       }
       input {
         border: 0;
         background-color: transparent;
         color: $gray-7;
+        width: 80%;
       }
     }
     form{
