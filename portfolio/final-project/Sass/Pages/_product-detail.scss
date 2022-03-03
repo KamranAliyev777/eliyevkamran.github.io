@@ -31,7 +31,6 @@
   }
 
   .product-detail-inner {
-    @include flex(row, center, flex-start);
     overflow: hidden;
   }
 
@@ -220,6 +219,10 @@
   .product-price {
     padding-bottom: 16px;
     border-bottom: 1px solid $gray-6;
+
+    @include device{
+      display: none
+    }
   }
 
   .product-info-general {
@@ -248,7 +251,7 @@
     margin-bottom: 20px;
 
     @include device {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
   }
 
@@ -305,6 +308,11 @@
 
   .product-btns {
     margin-bottom: 40px;
+    @include flex(row,flex-start,center);
+
+    @include tablet{
+      justify-content: space-between;
+    }
 
     > button {
       padding: 14px 40px;
@@ -329,7 +337,18 @@
         display: none;
       }
     }
+    .product-price{
+      display: none;
+      padding: 0;
+      margin-bottom: 0;
+      margin-right: 20px;
+
+      @include device{
+        display: flex;
+      }
+    }
   }
+
 
   .product-about {
     color: $gray-1;

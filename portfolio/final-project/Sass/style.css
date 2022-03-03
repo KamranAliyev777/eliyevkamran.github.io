@@ -1093,19 +1093,6 @@ section {
 }
 
 #product-detail .product-detail-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   overflow: hidden;
 }
 
@@ -1365,6 +1352,12 @@ section {
   border-bottom: 1px solid #F2F2F2;
 }
 
+@media (max-width: 991px) {
+  #product-detail .product-price {
+    display: none;
+  }
+}
+
 #product-detail .product-info-general .product-info-color,
 #product-detail .product-info-general .product-info-size {
   display: -webkit-box;
@@ -1407,8 +1400,8 @@ section {
 
 @media (max-width: 991px) {
   #product-detail .product-color-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -1490,6 +1483,27 @@ section {
 
 #product-detail .product-btns {
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  #product-detail .product-btns {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 #product-detail .product-btns > button {
@@ -1517,6 +1531,21 @@ section {
 @media (max-width: 991px) {
   #product-detail .product-btns .wish-basket {
     display: none;
+  }
+}
+
+#product-detail .product-btns .product-price {
+  display: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+  #product-detail .product-btns .product-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1679,13 +1708,13 @@ section {
 #product-similar .arrow-left,
 #product-advised .arrow-left,
 #product-liked .arrow-left {
-  left: -20px;
+  left: -10px;
 }
 
 #product-similar .arrow-right,
 #product-advised .arrow-right,
 #product-liked .arrow-right {
-  right: -20px;
+  right: -10px;
 }
 
 #product-review {
