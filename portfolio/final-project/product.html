@@ -10,23 +10,31 @@
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
-    <link rel="stylesheet" href="Sass/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>2021 Arzum Beauty House</title>
   </head>
   <body>
+    <!-- LOADER START -->
+    <div class="loader">
+      <div class="loader-item">
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <!-- LOADER FINISH -->
+    
     <!-- HEADER START -->
     <header id="header">
       <div class="container">
         <div class="header_inner">
           <div class="header-left">
-            <div class="logo">
+            <a href="product.html" class="logo">
               <img
                 src="images/logo.png"
                 alt="logo"
                 width="100%"
                 height="100%"
               />
-            </div>
+            </a>
           </div>
           <div class="header-left-mobile">
             <div class="mobile-icon">
@@ -34,7 +42,7 @@
               <div class="line"></div>
               <div class="line"></div>
             </div>
-            <div class="mobile-logo">
+            <a href="product.html" class="mobile-logo">
               <img
                 src="images/mobile-logo.png"
                 ;
@@ -42,7 +50,7 @@
                 width="100%"
                 height="100%"
               />
-            </div>
+            </a>
           </div>
           <div class="header-middle">
             <div class="search-block">
@@ -75,8 +83,8 @@
               ><i class="fal fa-search"></i
             ></span>
             <a href="login.html" class="user"><i class="fal fa-user"></i></a>
-            <a href="#" class="heart"><i class="fal fa-heart"></i></a>
-            <a href="#" class="bag_block">
+            <a href="#" class="heart"><i class="far fa-heart"></i></a>
+            <a href="orders.html" class="bag_block">
               <span class="bag"><i class="fal fa-shopping-bag"></i></span>
               <span class="bag_add_count">0</span>
             </a>
@@ -97,20 +105,12 @@
             <li><a href="#">Fırçalar və aksesuarlar</a></li>
             <li><a href="#">Hədiyyəlik dəstlər</a></li>
           </ul>
-          <div class="search-area">
-            <div class="search-block">
-              <form class="search">
-                <span><i class="fa fa-search"></i></span>
-                <input
-                  type="search"
-                  id="search"
-                  class="caption-font"
-                  name="searc"
-                  placeholder="Məhsul axtarın"
-                />
-              </form>
-            </div>
-          </div>
+
+              <div class="langs-mobile">
+                <div class="active">Az</div>
+                <div>Tur</div>
+                <div>En</div>
+              </div>
         </div>
       </div>
     </header>
@@ -155,7 +155,7 @@
                             height="100%"
                           />
                           <span class="product-heart"
-                            ><i class="fal fa-heart"></i
+                            ><i class="far fa-heart"></i
                           ></span>
                         </div>
                         <div class="product-image carousel-item" tabindex="1">
@@ -166,7 +166,7 @@
                             height="100%"
                           />
                           <span class="product-heart"
-                            ><i class="fal fa-heart"></i
+                            ><i class="far fa-heart"></i
                           ></span>
                         </div>
                         <div class="product-image carousel-item" tabindex="1">
@@ -177,7 +177,7 @@
                             height="100%"
                           />
                           <span class="product-heart"
-                            ><i class="fal fa-heart"></i
+                            ><i class="far fa-heart"></i
                           ></span>
                         </div>
                         <div class="product-image carousel-item" tabindex="1">
@@ -188,7 +188,7 @@
                             height="100%"
                           />
                           <span class="product-heart"
-                            ><i class="fal fa-heart"></i
+                            ><i class="far fa-heart"></i
                           ></span>
                         </div>
                         <div class="product-image carousel-item" tabindex="1">
@@ -199,7 +199,7 @@
                             height="100%"
                           />
                           <span class="product-heart"
-                            ><i class="fal fa-heart"></i
+                            ><i class="far fa-heart"></i
                           ></span>
                         </div>
                         <div class="product-image carousel-item" tabindex="1">
@@ -210,7 +210,7 @@
                             height="100%"
                           />
                           <span class="product-heart"
-                            ><i class="fal fa-heart"></i
+                            ><i class="far fa-heart"></i
                           ></span>
                         </div>
                         <div class="slide-arrow">
@@ -403,7 +403,7 @@
         <!-- PRODUCT-DETAIL FINISH -->
 
         <!-- PRODUCT-SIMILAR START -->
-        <section id="product-similar">
+        <section id="product-similar" class="slider-section">
           <div class="section-title">
             <h6>Oxşar məhsullar</h6>
             <a href="#">Hamısına bax <i class="fal fa-chevron-right"></i></a>
@@ -438,7 +438,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -470,7 +470,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -501,7 +501,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -532,7 +532,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -564,7 +564,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -596,7 +596,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -628,7 +628,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -660,7 +660,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -688,7 +688,7 @@
         <!-- DISCOUNT-BLOCK FINISH -->
 
         <!-- PRODUCT-ADVICED START -->
-        <section id="product-advised">
+        <section id="product-advised" class="slider-section">
           <div class="section-title">
             <h6>Bu məhsulu alan insanlar bunları da alıblar</h6>
             <a href="#">Hamısına bax <i class="fal fa-chevron-right"></i></a>
@@ -723,7 +723,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -754,7 +754,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -785,7 +785,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -817,7 +817,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -849,7 +849,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -881,7 +881,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -913,7 +913,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -945,7 +945,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -1065,7 +1065,7 @@
                   <p>Hamı üçün olmalıdır</p>
                 </div>
               </div>
-              <a href="#" class="more-btn text-font1">Daha çox rəy göstər</a>
+              <a href="#" class="more more-btn text-font1">Daha çox rəy göstər</a>
             </div>
             <div class="col-md-4 rating-block">
               <div class="rating-article">
@@ -1126,7 +1126,7 @@
         <!-- PRODUCT-REVIEW FINISH -->
 
         <!-- PRODUCT-LIKED START -->
-        <section id="product-liked">
+        <section id="product-liked" class="slider-section">
           <div class="section-title">
             <h6>Ən çox bəyənilənlər</h6>
             <a href="#">Hamısına bax <i class="fal fa-chevron-right"></i></a>
@@ -1161,7 +1161,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -1193,7 +1193,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -1224,7 +1224,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -1255,7 +1255,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -1287,7 +1287,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -1319,7 +1319,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -1351,7 +1351,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>
@@ -1383,7 +1383,7 @@
                       </div>
                     </div>
                     <span class="product-heart"
-                      ><i class="fal fa-heart"></i
+                      ><i class="far fa-heart"></i
                     ></span>
                   </a>
                 </div>

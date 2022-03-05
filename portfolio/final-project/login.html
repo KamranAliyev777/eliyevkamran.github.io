@@ -10,23 +10,31 @@
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
-    <link rel="stylesheet" href="Sass/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>2021 Arzum Beauty House</title>
   </head>
   <body>
+    <!-- LOADER START -->
+    <div class="loader">
+      <div class="loader-item">
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <!-- LOADER FINISH -->
+    
     <!-- HEADER START -->
     <header id="header">
       <div class="container">
         <div class="header_inner">
           <div class="header-left">
-            <div class="logo">
+            <a href="product.html" class="logo">
               <img
                 src="images/logo.png"
                 alt="logo"
                 width="100%"
                 height="100%"
               />
-            </div>
+            </a>
           </div>
           <div class="header-left-mobile">
             <div class="mobile-icon">
@@ -34,7 +42,7 @@
               <div class="line"></div>
               <div class="line"></div>
             </div>
-            <div class="mobile-logo">
+            <a href="product.html" class="mobile-logo">
               <img
                 src="images/mobile-logo.png"
                 ;
@@ -42,7 +50,7 @@
                 width="100%"
                 height="100%"
               />
-            </div>
+            </a>
           </div>
           <div class="header-middle">
             <div class="search-block">
@@ -75,8 +83,8 @@
               ><i class="fal fa-search"></i
             ></span>
             <a href="login.html" class="user"><i class="fal fa-user"></i></a>
-            <a href="#" class="heart"><i class="fal fa-heart"></i></a>
-            <a href="#" class="bag_block">
+            <a href="#" class="heart"><i class="far fa-heart"></i></a>
+            <a href="orders.html" class="bag_block">
               <span class="bag"><i class="fal fa-shopping-bag"></i></span>
               <span class="bag_add_count">0</span>
             </a>
@@ -86,31 +94,23 @@
       <div class="nav">
         <div class="container">
           <ul>
-            <li><a href="#">Yeni</a></li>
-            <li><a href="#">Brendlər</a></li>
-            <li><a href="#">Endirimlər</a></li>
-            <li><a href="#">Makiyaj</a></li>
-            <li><a href="#">Üz</a></li>
-            <li><a href="#">Saç</a></li>
-            <li><a href="#">Bədən</a></li>
-            <li><a href="#">K-beauty</a></li>
-            <li><a href="#">Fırçalar və aksesuarlar</a></li>
-            <li><a href="#">Hədiyyəlik dəstlər</a></li>
+            <li><a href="#" data-hover="Yeni">Yeni</a></li>
+            <li><a href="#" data-hover="Brendlər">Brendlər</a></li>
+            <li><a href="#" data-hover="Endirimlər">Endirimlər</a></li>
+            <li><a href="#" data-hover="Makiyaj">Makiyaj</a></li>
+            <li><a href="#" data-hover="Üz">Üz</a></li>
+            <li><a href="#" data-hover="Saç">Saç</a></li>
+            <li><a href="#" data-hover="Bədən">Bədən</a></li>
+            <li><a href="#" data-hover="K-beauty">K-beauty</a></li>
+            <li><a href="#" data-hover="Fırçalar və aksesuarlar">Fırçalar və aksesuarlar</a></li>
+            <li><a href="#" data-hover="Hədiyyəlik dəstlər">Hədiyyəlik dəstlər</a></li>
           </ul>
-          <div class="search-area">
-            <div class="search-block">
-              <form class="search">
-                <span><i class="fa fa-search"></i></span>
-                <input
-                  type="search"
-                  id="search"
-                  class="caption-font"
-                  name="searc"
-                  placeholder="Məhsul axtarın"
-                />
-              </form>
-            </div>
-          </div>
+
+              <div class="langs-mobile">
+                <div class="active">Az</div>
+                <div>Tur</div>
+                <div>En</div>
+              </div>
         </div>
       </div>
     </header>
@@ -161,7 +161,7 @@
                 </div>
                 <i class="fa fa-eye"></i>
               </div>
-              <div class="forgot-password"><a>Şifrəmi unutdum</a></div>
+              <div class="forgot-password"><a href="#">Şifrəmi unutdum</a></div>
               <button class="">Daxil ol</button>
             </form>
             </div>
@@ -172,86 +172,6 @@
     </div>
     <!-- LOGIN BLOCK FINISH -->
 
-    <!-- FOOTER START -->
-    <footer id="footer">
-      <div class="container">
-        <div class="footer-inner">
-          <div class="row footer-nav">
-              <div class="col-sm-6 col-md-3 footer-items">
-                  <h6>Arzum Beauty</h6>
-                  <ul class="footer-menu text-font2">
-                    <li><a href="#">Haqqımızda</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Karyera</a></li>
-                    <li><a href="#">Korporativ məsuliyyət</a></li>
-                    <li><a href="#">Filiallar</a></li>
-                  </ul>
-              </div>
-              <div class="col-sm-6 col-md-3 footer-items">
-                  <h6>Menu</h6>
-                  <ul class="footer-menu text-font2">
-                    <li><a href="#">Məşhur brendlər</a></li>
-                    <li><a href="#">Kampaniyalar</a></li>
-                    <li><a href="#">Endirimlər və kuponlar</a></li>
-                    <li><a href="#">Hədiyyələr</a></li>
-                    <li><a href="#">Filiallar</a></li>
-                  </ul>
-              </div>
-              <div class="col-sm-6 col-md-3 footer-items">
-                  <h6>Kömək</h6>
-                  <ul class="footer-menu text-font2">
-                    <li><a href="#">Tez-tez soruşulan suallar</a></li>
-                    <li><a href="#">Müştəri xidmətləri</a></li>
-                    <li><a href="#">Çatdırılma xidməti</a></li>
-                    <li><a href="#">Geri qaytarılma şərtləri</a></li>
-                    <li><a href="#">Məhsulu izləmə</a></li>
-                  </ul>
-              </div>
-              <div class="col-sm-6 col-md-3 footer-items">
-                  <h6>Əlaqə</h6>
-                  <ul class="footer-menu text-font2">
-                    <li>
-                      <ul class="social">
-                        <li>
-                          <a href="#"><img src="images/instagram.svg" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="images/facebook.svg" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="images/youtube.svg" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img src="images/twitter.svg" /></a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Qəbul edilən kartlar</a></li>
-                    <li>
-                      <img
-                        src="images/pay-cards.png"
-                        alt="pay-cards"
-                        width="100%"
-                        height="100%"
-                      />
-                    </li>
-                  </ul>
-              </div>
-          </div>
-          <div class="footer-bottom">
-            <div class="copyright">
-              <i class="fa fa-copyright"></i>
-              <p class="text-font2">2021 Arzum Beauty House</p>
-            </div>
-            <ul class="footer-bottom-nav text-font1">
-              <li><a href="#">Qaydalar və şərtlər</a></li>
-              <li><a href="#">Gizlilik siyasəti</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- FOOTER FINISH -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

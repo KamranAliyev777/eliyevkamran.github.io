@@ -118,6 +118,11 @@ $(".comment-send-btn").click(function (e) {
   $('html,body').stop().animate({
     scrollTop: totalScroll
 }, 1000)
+$("#comment-area").val('');
+
+if($(".comments-block a").attr("class").includes("more-btn")){
+$(".comments-block a").trigger("click");
+}
 });
 
 // DROPDOWN
@@ -135,3 +140,68 @@ dropdown.find("li").click(function(){
     $(".main-lang").text(drop_item);
     arrow.removeClass("fa-chevron-up");
 })
+
+// LANGUAGES MOBILE
+$(".langs-mobile div").click(function(){
+  $(this).addClass("active").siblings().removeClass("active");
+})
+
+// SEARCH
+$(".search-icon").click(function(){
+  $(".header-middle").slideToggle();
+})
+
+// LIKE
+$(".product-heart").click(function(e){
+  e.preventDefault();
+  $(this).toggleClass("active")
+})
+
+// TABINDEX-0 IN DEVICE SCREEN UNDER
+if($("body").width()<992){
+  $(".product-image").removeAttr("tabindex");
+};
+
+// COMMENT MORE AND LESS
+let maxComment=3;
+let comment=$(".comment");
+for(let i=maxComment;i<comment.length;i++){
+  comment.eq(i).css("display","none");
+}
+$(".comments-block a").click(function(e){
+  comment=$(".comment");
+  e.preventDefault();
+  if($(this).attr("class").includes("more-btn")){
+    console.log(comment.length)
+    for(let i=maxComment;i<comment.length;i++){
+      comment.eq(i).css("display","block");
+      $(this).removeClass("more-btn").addClass("less-btn").text("Daha az rəy göstər");
+    }
+  }
+  else{
+    for(let i=maxComment;i<comment.length;i++){
+      comment.eq(i).css("display","none");
+      $(this).removeClass("less-btn").addClass("more-btn").text("Daha çox rəy göstər");
+    }
+  }
+});
+
+$(window).on("load",function(){
+  $(".loader").css("display","none");
+})
+
+// PASSWORD EYE
+$("#login-form i").click(function(){
+  let login_input=$(this).parent().find("#login-psw");
+
+  if(login_input.attr("type")=="password"){
+    login_input.attr("type","text");
+    $(this).removeClass("fa-eye").addClass("fa-eye-slash");
+  }
+  else{
+    login_input.attr("type","password");
+    $(this).removeClass("fa-eye-slash").addClass("fa-eye");
+  }
+  
+})
+
