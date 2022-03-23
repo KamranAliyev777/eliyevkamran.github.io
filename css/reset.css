@@ -19,9 +19,6 @@ a, abbr, acronym, address, applet, b, big, blockquote, body, button, caption, ce
     background-clip: initial;
     background-color: initial;
 }
-/*div{
-        display: block;
-}*/
 html, body{
  width:100%;
  min-height:100%;

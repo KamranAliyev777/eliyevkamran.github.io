@@ -80,9 +80,6 @@
     .works{
         grid-template-columns: 1fr;
     }
-    .works .work{
-        margin-bottom: 100px;
-    }
     .work h4{
         font-size: 25px;
     }
