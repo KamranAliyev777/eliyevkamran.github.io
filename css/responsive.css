@@ -21,6 +21,9 @@
     .translate_0{
         transform: translate(0);
     }
+    .works{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media (max-width:768px){
     .personal{
