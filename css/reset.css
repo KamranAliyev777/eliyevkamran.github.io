@@ -1,69 +1,216 @@
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-a, abbr, acronym, address, applet, b, big, blockquote, body, button, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, tt, u, ul, var, wix-iframe {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    vertical-align: baseline;
-    background: 0 0;
-    background-image: initial;
-    background-position-x: 0px;
-    background-position-y: 0px;
-    background-size: initial;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+big,
+blockquote,
+body,
+button,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+title,
+tr,
+tt,
+u,
+ul,
+var,
+wix-iframe {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: 0 0;
+  background-image: initial;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
 }
-html, body{
- width:100%;
- min-height:100%;
+html,
+body {
+  width: 100%;
+  min-height: 100%;
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 *,
 :after,
-:before{
-	box-sizing:inherit; 
+:before {
+  box-sizing: inherit;
 }
-ul li ,
-ol li{
-list-style-type: none;
-float: left;
+ul li,
+ol li {
+  list-style-type: none;
+  float: left;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-a, span, label{
-    display: inline-block;
+a,
+span,
+label {
+  display: inline-block;
 }
-.container{
-    position: relative;
-    float:none;
-    margin:0 auto;
+.container {
+  position: relative;
+  float: none;
+  margin: 0 auto;
 }
 
-.full_w{
-    position: relative;
-    float: none;
-    width: 100%;
+.full_w {
+  position: relative;
+  float: none;
+  width: 100%;
 }
-.full_h{
-    height: 100%;
+.full_h {
+  height: 100%;
 }
-select, input[type=radio], input[type=checkbox]{
-	-webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+select,
+input[type="radio"],
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-input, select, textarea, div,button{
-    outline: none;
+input,
+select,
+textarea,
+div,
+button {
+  outline: none;
 }
-i{
-    cursor: pointer;
+i {
+  cursor: pointer;
+}
+
+/* CSS styles for various tool icons */
+.html-icon {
+  color: #e44d26;
+}
+.mail-icon {
+  color: #d14836 !important;
+}
+
+.css-icon {
+  color: #1572b6;
+}
+.bts-icon {
+  color: #563d7c;
+}
+
+.js-icon {
+  color: #f7df1e;
+}
+
+.react-icon {
+  color: #70cbe3;
+}
+
+.angular-icon {
+  color: #dd1b16;
+}
+
+.vuejs-icon {
+  color: #42b883;
+}
+
+.nodejs-icon {
+  color: #339933;
+}
+
+.python-icon {
+  color: #3776ab;
+}
+
+.java-icon {
+  color: #007396;
+}
+
+.csharp-icon {
+  color: #239120;
+}
+
+.php-icon {
+  color: #777bb4;
+}
+
+.ruby-icon {
+  color: #cc342d;
+}
+
+.swift-icon {
+  color: #ffac45;
+}
+
+.android-icon {
+  color: #3ddc84;
+}
+
+.ios-icon {
+  color: #000000;
+}
+.github-icon {
+  color: #181717;
 }
